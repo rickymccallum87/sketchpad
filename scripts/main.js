@@ -3,7 +3,8 @@
 $(document).ready(function() {
   var grid = $('#grid');
   var squareCount = 16; 
-  var gridSize = 800;
+  var gridSize = 640;
+  grid.css({'width': gridSize});
   
   drawGrid(squareCount);
   
