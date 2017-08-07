@@ -1,0 +1,13 @@
+.grid {
+}
+
+.square {
+  height: 20px;
+  width: 20px;
+  float: left;
+  border: 1px solid blue;
+}
+
+.new-row {
+  clear: left;
+}
