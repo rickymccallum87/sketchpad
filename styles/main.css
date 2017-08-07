@@ -1,9 +1,15 @@
+body {
+  text-align: center;
+  background-color: white;
+}
+
 #grid {
+  margin: 0 auto;
+  width: 800px;
 }
 
 .square {
-  /*border: 1px solid #aaa;*/
-  background-color: #ddd;
+  background-color: #eee;
   height: 20px;
   width: 20px;
   float: left;
@@ -15,4 +21,9 @@
 
 .activated {
   background-color: black;
+}
+
+#reset {
+  padding: 10px 20px;
+  margin-bottom: 15px;
 }

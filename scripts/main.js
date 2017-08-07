@@ -7,7 +7,7 @@ $(document).ready(function() {
   
   drawGrid(squareCount);
   
-  // Create a grid of 16x16 divs
+  // Create a grid
   function drawGrid(sq) {
     for (var i = 0; i < sq; i++) {
       addSquare(true);
@@ -37,6 +37,11 @@ $(document).ready(function() {
   
   // Allow user to draw over grid
   grid.on('mouseenter', '.square', function() {
+    if ($(this).hasClass('activated')) {
+    } else {
+      var randomColor = '#'+Math.random().toString(16).substr(2,6);
+      $(this).css('background-color', randomColor);
+    }
     $(this).addClass('activated');
   }); 
   
