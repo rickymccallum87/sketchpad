@@ -1,13 +1,18 @@
-.grid {
+#grid {
 }
 
 .square {
+  /*border: 1px solid #aaa;*/
+  background-color: #ddd;
   height: 20px;
   width: 20px;
   float: left;
-  border: 1px solid blue;
 }
 
 .new-row {
   clear: left;
+}
+
+.activated {
+  background-color: black;
 }
