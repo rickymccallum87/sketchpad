@@ -40,6 +40,7 @@ $(document).ready(function() {
   grid.on('mouseenter', '.square', function() {
     if ($(this).hasClass('activated')) {
     } else {
+      // randomColor code written by mohsen http://jsbin.com/OjELIfo/2/edit
       var randomColor = '#'+Math.random().toString(16).substr(2,6);
       $(this).css('background-color', randomColor);
     }
